@@ -3,8 +3,6 @@ from django.shortcuts import render
 # Create your views here.
 
 
-
-
 def pagenotfoundView(request, exception):
     return render(request,'web/404.html')
 

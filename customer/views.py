@@ -15,7 +15,6 @@ from datetime import datetime
 from datetime import date
 import threading
 from django.db import transaction
-import requests
 from django.conf import settings
 
 

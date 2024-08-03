@@ -11,10 +11,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-26!2*pk=ttzl((e$*q#&e4gi4$4_*7hu9+pm^4!slqzw9rfsa6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['141.94.251.76','*','kontriman.com','www.kontriman.com']
+ALLOWED_HOSTS = ['*','kontriman.com','www.kontriman.com','https//www.kontriman.com']
 
+# ALLOWED_HOSTS = ['141.94.251.76','*','kontriman.com','www.kontriman.com']
 
 # Application definition
 
@@ -119,12 +120,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# MEDIA_ROOT = '/home/primmyqr/m.example.com/media'
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_ROOT = '/home/ubuntu/kontriman.com/media'
 
 
 STATIC_URL = '/static/'
@@ -132,8 +133,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
 
 
-# STATIC_URL = '/static/'
-# STATIC_ROOT = '/home/primmyqr/m.primtask.com/static'
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/ubuntu/kotriman.com/static'
 
 
 # SESSION_EXPIRE_SECONDS =3628800
@@ -151,4 +152,7 @@ TIME_ZONE='Africa/Douala'
 USE_TZ=True
 
 DEFAULT_CHARSET='utf-8'
+
+
+
 
